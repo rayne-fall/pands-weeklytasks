@@ -2,16 +2,16 @@
 # author: Sylvia Chapman Kent
 # prompt the user to enter two money amounts in cent and output the sum of these two figures in euros and cents
 
-
 amount1 = int(input("Enter amount 1 in cent "))
 amount2 = int(input("Enter amount 2 in cent "))
-x = amount1
-y = amount2
+total = int((amount1+amount2))
+result = int(float(f'{total:.2f}'))
+answer = result/100.00
 
-answer = (x+y)
+print ("The total is €"+str(answer))
 
-print (answer)
-
-# output now gives correct figure in cent but isn't formatted into euro and cent yet
-
+# References
+# Comment by The_Outsider showing that "answer" needs to be entered as a string when printing result https://stackoverflow.com/questions/45744364/python-how-do-i-add-variables-with-integer-values-together
+# Comment by Ehsan Fathi about using f strings to show result with two decimal places https://stackoverflow.com/questions/2075128/python-print-all-floats-to-2-decimal-places-in-output
+# Comment by FdoBad and user3064538 about converting strings to floats to avoid "invalid literal for int() with base 10 error" when converting result to euros and cents https://stackoverflow.com/questions/1841565/valueerror-invalid-literal-for-int-with-base-10
 
