@@ -2,13 +2,13 @@
 # author: Sylvia Chapman Kent
 # prompt the user to enter two money amounts in cent and output the sum of these two figures in euros and cents
 
-amount1 = int(input("Enter amount 1 in cent "))
-amount2 = int(input("Enter amount 2 in cent "))
-total = int((amount1+amount2))
-result = int(float(f'{total:.2f}'))
-answer = result/100.00
+amount_1 = int(input("Enter amount 1 in cent "))
+amount_2 = int(input("Enter amount 2 in cent "))
+total = int((amount_1+amount_2))
+result_as_decimal = int(float(f'{total:.2f}'))
+answer_in_euro = result_as_decimal/100.00
 
-print ("The total is €"+str(answer))
+print (f"The total is €{answer_in_euro}")
 
 # References
 # Comment by The_Outsider showing that "answer" needs to be entered as a string when printing result https://stackoverflow.com/questions/45744364/python-how-do-i-add-variables-with-integer-values-together
