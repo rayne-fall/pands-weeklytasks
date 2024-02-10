@@ -5,7 +5,13 @@
 amount_1 = int(input("Enter amount 1 in cent "))
 amount_2 = int(input("Enter amount 2 in cent "))
 total = int((amount_1+amount_2))
+
+# need to show total to two decimal places as this is the usual convention for writing money figures
+
 result_as_decimal = int(float(f'{total:.2f}'))
+
+# need to divide result_as_decimal by 100 to convert from cents to euros
+
 answer_in_euro = result_as_decimal/100.00
 
 print (f"The total is €{answer_in_euro}")
