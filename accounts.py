@@ -4,4 +4,4 @@
 
 account_number = input("Enter your 10 digit account number ")
 
-print(f"The account number is {account_number}")
+print(f"The account number is XXXXXX{account_number[6:]}")
