@@ -6,10 +6,10 @@ def collatz_conjecture(number): # defines the function we're going to use on the
     while (number!=1): # breaks the loop and ends the program when number reaches 1
        if (number%2==0):
           number = (number//2) # divides by 2 if number is even
-          print (number, end=" ")
+          print (number, end=" ") # displays results in a single line with a space between
        else:
           number = (3*number)+1 # multiplies by 3 and adds 1 if number is odd
-          print (number, end=" ")
+          print (number, end=" ") # displays results in a single line with a space between
 
 user_input= int(input("Enter number: "))
 collatz_conjecture(user_input) 
