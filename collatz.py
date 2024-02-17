@@ -1,27 +1,20 @@
 # collatz
 # Author: Sylvia Chapman Kent
-# asks users to input any positive integer, divides the current value by two (if even) or multiplies it by three and adds one (if odd), and ends once the value reaches 1
+# demonstrates the Collatz conjecture and prints the results on a single line
 
-number = int(input("Enter any positive integer: "))
+def collatz_conjecture(number): # defines the function we're going to use on the user's input
+    while (number!=1): # breaks the loop and ends the program when number reaches 1
+       if (number%2==0):
+          number = (number//2) # divides by 2 if number is even
+          print (number, end=" ")
+       else:
+          number = (3*number)+1 # multiplies by 3 and adds 1 if number is odd
+          print (number, end=" ")
 
-if (number%2) == 0: 
-    result = (number/2) # if value is even, value is divided by 2
-elif number == 1:
-    print ("Program end: value = 1") # ends program if value reaches 1
-else:
-    result = ((number*3)+1) # if value is odd, value is multplied by 3 and 1 is added
-
-while (result%2) == 0:
-    print(result)
-    result /= 2
-    if result == 1.0:
-        print ("Program end: value = 1")
-while (result%2) != 0:
-    print (result)
-    result *= 3+1
-
-# Incomplete: fails with higher numbers and doesn't display answeres in a single line
-
+user_input= int(input("Enter number: "))
+collatz_conjecture(user_input) 
 
 # References
 # Article showing how to check if a number is even or odd in python https://www.programiz.com/python-programming/examples/odd-even
+# W3 schools article showing how to define a function https://www.w3schools.com/python/python_functions.asp 
+# Comments showing how to display outputs in a single line with spacing between https://stackoverflow.com/questions/58655551/how-to-print-output-in-single-line
