@@ -11,7 +11,7 @@ def collatz_conjecture(number): # defines the function we're going to use on the
           number = (3*number)+1 # multiplies by 3 and adds 1 if number is odd
           print (number, end=" ") # displays results in a single line with a space between
 
-user_input= int(input("Enter number: "))
+user_input= int(input("Enter a number: "))
 collatz_conjecture(user_input) 
 
 # References
