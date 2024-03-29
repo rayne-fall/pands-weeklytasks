@@ -2,8 +2,6 @@
 # author: Sylvia Chapman Kent
 # displays a histogram and plots a function on the same axes
 
-import matplotlib # importing matplotlib and numpy so we can create the histrogram and plot the function
-
 import matplotlib.pyplot as plt
 import numpy as np
 
