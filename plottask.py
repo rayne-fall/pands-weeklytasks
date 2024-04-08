@@ -10,8 +10,8 @@ histogram_data = np.random.normal(loc= 5, scale= 2, size= 1000) # we want a norm
 x_points = np.array(range(0,10)) # we want these points to have a range of 0-10
 hx_points = x_points*x_points*x_points # function is h(x)=x^3, in other words x times x times x
 
-plt.hist(histogram_data) # creates the histogram
-plt.plot(x_points,hx_points, marker = 'o', linestyle = '-', color = 'hotpink') # plots the h(x) function with round markers on a solid pink line
+plt.hist(histogram_data, label ='normal distribution') # creates the histogram
+plt.plot(x_points,hx_points, label = 'h(x)=x^3', marker = 'o', linestyle = '-', color = 'hotpink') # plots the h(x) function with round markers on a solid pink line
 plt.title("Weekly Task 8") # puts a title on the plot
 
 # put labels on both axes
@@ -19,6 +19,7 @@ plt.xlabel("x values")
 plt.ylabel("h(x) values")
 
 plt.grid(ls=':') # displays a grid of dotted lines on the axes
+plt.legend() # puts a legend on the plot
 plt.show() # displays the plot
 
 # References
